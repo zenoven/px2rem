@@ -39,7 +39,7 @@ program.version(pkg.version)
     .option('-b, --baseDpr [value]', 'set base device pixel ratio (default: 2)', 2)
     .option('-p, --remPrecision [value]', 'set rem value precision (default: 6)', 6)
     .option('-o, --output [path]', 'the output file dirname')
-    .option('-n, --noTransformProperties [properties]', 'should not be transformed properties')
+    .option('-n, --noTransformProperties [properties]', 'should not be transformed properties, a string split with comma (default: ``)')
     .parse(process.argv);
 
 if (!program.args.length) {
